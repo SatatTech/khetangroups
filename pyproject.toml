@@ -1,0 +1,11 @@
+[project]
+name = "khetangroups"
+authors = [
+    {name = "Vraj Patel", email = "vraj.patel@satat.tech"}
+]
+description = "Custom Frappe app"
+requires-python = ">=3.10"
+dynamic = ["version"]
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
