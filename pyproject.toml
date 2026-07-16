@@ -6,6 +6,10 @@ authors = [
 description = "Custom Frappe app"
 requires-python = ">=3.10"
 dynamic = ["version"]
+dependencies = [
+    "qrcode[pil]>=7.0",
+    "Pillow",
+]
 
 [tool.bench.frappe-dependencies]
 frappe = ">=16.0.0,<17.0.0"

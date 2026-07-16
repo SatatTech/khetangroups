@@ -4,4 +4,6 @@
 *.swp
 tags
 khetangroup/docs/current
-node_modules/
+node_modules/khetangroup/apps/
+*.bak
+*.code-workspace

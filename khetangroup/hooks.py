@@ -55,7 +55,7 @@ app_license = "MIT"
 # ----------
 jinja = {
 	"methods": [
-		"khetangroup.qrcode.get_qr_code"
+		"khetangroup.qr_utils.get_qr_code"
 	]
 }
 
@@ -118,7 +118,9 @@ jinja = {
 # override_doctype_class = {
 #	"ToDo": "custom_app.overrides.CustomToDo"
 # }
-
+override_doctype_class = {
+    "Sales Invoice": "khetangroup.khetangroup.overrides.sales_invoice.CustomSalesInvoice"
+}
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -152,7 +154,7 @@ jinja = {
 #	],
 # }
 scheduler_events = {    
-    "update_stock_entry": {
+    "cron": {
         "*/5 * * * *": [
             "khetangroup.update_stock_entry.update_stock_entry"
         ],
