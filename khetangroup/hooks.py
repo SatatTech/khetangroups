@@ -229,42 +229,50 @@ scheduler_events = {
 #	"khetangroup.auth.validate"
 # ]
 
-fixtures =[
+fixtures = [
     "Property Setter",
-     
-            {"dt":"Client Script","filters":[
-        [
-            "module","in",[
-               "khetangroup"
-            ]
+
+    {
+        "dt": "Client Script",
+        "filters": [
+            ["module", "in", ["khetangroup"]]
         ]
-    ]},
-            {"dt":"Server Script","filters":[
-        [
-            "module","in",[
-               "khetangroup"
-            ]
+    },
+
+    {
+        "dt": "Server Script",
+        "filters": [
+            ["module", "in", ["khetangroup"]]
         ]
-    ]},
-             {"dt":"Custom Field","filters":[
-        [
-            "module","in",[
-               "khetangroup"
-            ]
+    },
+
+    # Existing khetangroup custom fields
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["module", "in", ["khetangroup"]]
         ]
-    ]},
-              {"dt":"Print Format","filters":[
-        [
-            "module","in",[
-               "khetangroup"
-            ]
+    },
+
+    # New custom field whose module is NULL
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["name", "=", "Stock Entry Detail-custom_actual_weight_per_unit"]
         ]
-    ]},
-               {"dt":"Report","filters":[
-        [
-            "module","in",[
-               "khetangroup"
-            ]
+    },
+
+    {
+        "dt": "Print Format",
+        "filters": [
+            ["module", "in", ["khetangroup"]]
         ]
-    ]},
+    },
+
+    {
+        "dt": "Report",
+        "filters": [
+            ["module", "in", ["khetangroup"]]
+        ]
+    },
 ]

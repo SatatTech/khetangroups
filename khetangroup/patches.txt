@@ -1,0 +1,1 @@
+khetangroup.patches.fix_internal_supplier_addresses
